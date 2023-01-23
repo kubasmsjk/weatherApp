@@ -83,10 +83,7 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_CODE);
         }
 
-        //cityName = getCityName( 77.216721, 28.644800);
         getWeatherInfo("Warsaw");
-
-
 
         searchIV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
                     Picasso.get().load("http:".concat(conditionIcon)).into(iconIV);
                     conditionTV.setText(condition);
                     if (isDay == 1) {
-                        Picasso.get().load("https://images.unsplash.com/photo-1497321697169-1ca9f1c8a253?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80").into(backIV);
+                        Picasso.get().load("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80").into(backIV);
                     } else {
                         Picasso.get().load("https://images.unsplash.com/photo-1532767153582-b1a0e5145009?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80").into(backIV);
                     }
